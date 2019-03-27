@@ -9,8 +9,8 @@ const BuyFood = () => (
             If you do not feel like cooking today, fill out the form with the recipe you want - and today you'll get it home, hot and fresh!
         </p>
 
-        <div name="contact" claseName="form-container">
-            <form method="POST" data-netlify="true" >
+        <div claseName="form-container">
+            <form name="contact" netlify-honeypot="bot-field" data-netlify="true">
                 <div claseName="row">
                     <input className="user-name" type="text" id="fname" name="firstname" placeholder="Your Full Name" />
                 </div>
@@ -18,7 +18,7 @@ const BuyFood = () => (
                     <textarea id="subject" name="subject" placeholder="Enter your order details here..."></textarea>
                 </div>
                 <div class="row">
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="Submit" name='submit' />
                 </div>
             </form>
         </div>

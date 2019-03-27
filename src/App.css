@@ -331,6 +331,10 @@ a {
 textarea{
   height: 20vh;
 }
+.user-name{
+  width: 50%;
+  margin: 1rem 0 0 0;
+}
  .row {
       width: 50%;
       margin: 0.5rem auto;
