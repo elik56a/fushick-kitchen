@@ -2,13 +2,19 @@ import React, { Component } from 'react';
 import './App.css';
 import Form from './components/Form'
 import Recipes from './components/Recepies'
-import Navbar from './components/Navbar'
 import ShowCase from './components/ShowCase';
 import About from './components/About';
 import Video from './components/Video';
 import BuyFood from './components/BuyFood'
 import MapContainer from './components/MapContainer'
 import Footer from './components/Footer'
+
+// Smooth Scroll Config
+import ScrollableSection, { ScrollableLink } from 'react-scrollable-url';
+import { configureAnchors } from 'react-scrollable-url'
+// configureAnchors({ keepLastAnchorHash: false, debounce: 500 });
+
+// Food2Fork API
 const myApiKey = "6697f3a1a2650cd42df99ea3ba26c181"
 class App extends Component {
   state = {
@@ -45,22 +51,54 @@ class App extends Component {
     localStorage.setItem("recipes", recipes)
   }
 
+
+
   render() {
     return (
       <React.Fragment>
-        <Navbar />
-        <ShowCase />
-        <About />
+        <nav className="navbar" id='navbar'>
+          <span className="open-slide">
+            <a href=""><i className="fas fa-bars fa-2x"></i></a>
+          </span>
+          <ul className="nav-links">
+            <ScrollableLink href="/showcase">
+              <li> <a>Home </a></li>
+            </ScrollableLink>
+
+            <ScrollableLink href="/about-section">
+              <li> <a> About Us </a></li>
+            </ScrollableLink>
+            <ScrollableLink href="/video-container">
+              <li> <a> Ouer Recipes </a></li>
+            </ScrollableLink>
+            <ScrollableLink href="/footer-container">
+              <li> <a>Contact </a></li>
+            </ScrollableLink>
+          </ul>
+        </nav>
+
+        <ScrollableSection name={'showcase'} title="showcase">
+          <div>  <ShowCase /> </div>
+
+        </ScrollableSection>
+        <ScrollableSection name={'about-section'} title="about-section">
+          <div>  <About /> </div>
+
+        </ScrollableSection>
         <Form getRecipe={this.getRecipe} />
         {this.state.error ? (
           <h2 className="error-msg">
             {this.state.error}
           </h2>)
           : (<Recipes recipes={this.state.recipes} />)}
-        <Video />
+        <ScrollableSection name={'video-container'} title="video-container">
+          <div>  <Video /> </div>
+        </ScrollableSection>
         <BuyFood />
         <MapContainer />
-        <Footer />
+        <ScrollableSection name={'footer-container'} title="footer-container">
+          <div>  <Footer /></div>
+        </ScrollableSection>
       </React.Fragment>
 
     );
