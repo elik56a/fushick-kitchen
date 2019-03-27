@@ -3,7 +3,7 @@ import React from 'react'
 
 const About = () => (
 
-    <div className="about-section">
+    <div className="about-section" id='about-section'>
         <h2 className="about-title">About Fushick Kitchen  <i className="fas fa-cookie-bite fa-1x"></i></h2>
         <div className="about-text">
             <p> Fushik Kitchen is a great place to find a delicious meal, you can cook or order - the choice is in your hand. <br></br>

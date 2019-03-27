@@ -10,7 +10,7 @@ const BuyFood = () => (
         </p>
 
         <div class="form-container">
-            <form >
+            <form method="POST" data-netlify="true" >
                 <div class="row">
                     <input className="user-name" type="text" id="fname" name="firstname" placeholder="Your Full Name" />
                 </div>
