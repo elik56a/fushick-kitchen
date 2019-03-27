@@ -9,9 +9,9 @@ const BuyFood = () => (
             If you do not feel like cooking today, fill out the form with the recipe you want - and today you'll get it home, hot and fresh!
         </p>
 
-        <div class="form-container">
+        <div name="contact" claseName="form-container">
             <form method="POST" data-netlify="true" >
-                <div class="row">
+                <div claseName="row">
                     <input className="user-name" type="text" id="fname" name="firstname" placeholder="Your Full Name" />
                 </div>
                 <div class="row">
