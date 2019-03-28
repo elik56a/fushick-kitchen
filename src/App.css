@@ -67,7 +67,7 @@ h1,h2,h3,h4,h5{
 
 /* show case img */
 #showcase{
-  min-height: 75vh;
+  max-height: 75vh;
   color:rgb(158, 157, 157);
   text-align: center;
   color:rgb(187, 187, 187);

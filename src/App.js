@@ -59,9 +59,6 @@ class App extends Component {
     return (
       <React.Fragment>
         <nav className="navbar" id='navbar'>
-          <span className="open-slide">
-            <a href=""><i className="fas fa-bars fa-2x"></i></a>
-          </span>
           <ul className="nav-links">
             <ScrollableLink href="/showcase">
               <li> <a>Home </a></li>
@@ -71,7 +68,7 @@ class App extends Component {
               <li> <a> About Us </a></li>
             </ScrollableLink>
             <ScrollableLink href="/video-container">
-              <li> <a> Ouer Recipes </a></li>
+              <li> <a> Recipes </a></li>
             </ScrollableLink>
             <ScrollableLink href="/footer-container">
               <li> <a>Contact </a></li>
