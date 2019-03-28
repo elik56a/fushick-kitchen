@@ -10,9 +10,9 @@ const BuyFood = () => (
         </p>
 
         <div className="form-container">
-            <form name="contact" netlify-honeypot="bot-field" data-netlify="true">
+            <form name="contact" netlify>
                 <div className="row">
-                    <input className="user-name" type="text" id="fname" name="firstname" placeholder="Your Full Name" />
+                    <input className="user-name" type="text" id="fname" name="userName" placeholder="Your Full Name" />
                 </div>
                 <div className="row">
                     <textarea id="subject" name="subject" placeholder="Enter your order details here..."></textarea>
