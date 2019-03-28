@@ -77,30 +77,34 @@ class App extends Component {
           </ul>
         </nav>
 
+        {/* The components start from here  */}
         <ScrollableSection name={'showcase'} title="showcase">
           <div>  <ShowCase /> </div>
-
         </ScrollableSection>
+
         <ScrollableSection name={'about-section'} title="about-section">
           <div>  <About /> </div>
-
         </ScrollableSection>
+
         <Form getRecipe={this.getRecipe} />
         {this.state.error ? (
           <h2 className="error-msg">
             {this.state.error}
           </h2>)
           : (<Recipes recipes={this.state.recipes} />)}
+
         <ScrollableSection name={'video-container'} title="video-container">
           <div>  <Video /> </div>
         </ScrollableSection>
+
         <BuyFood />
         <MapContainer />
+
         <ScrollableSection name={'footer-container'} title="footer-container">
           <div>  <Footer /></div>
         </ScrollableSection>
-      </React.Fragment>
 
+      </React.Fragment>
     );
   }
 }
