@@ -1,5 +1,5 @@
 /*media for smartphones */
-@media (max-width:600px){
+@media (max-width:700px){
     .navbar{
         text-align: start;
         height: 40px;
@@ -156,6 +156,26 @@ line-height: 1.8;
     .about-section{
         height:70vh;
     }
+    .photo{
+        width: 120px;
+        height: 120px;
+        background: wheat;
+        border-radius: 50%;
+        opacity: 0.9;
+        position: relative;
+        left: 50%;
+        margin-bottom: 10rem;
+        bottom: 0;
+      
+      }
+    .form_input{
+        width: 70%;
+    }
+    .selectNumber{
+        margin:1rem 0;
+        width: 50%;
+    }
+    
     .container ul{
         grid-gap: 1rem;
       grid-template-columns: repeat(2, 1fr); 
@@ -167,6 +187,58 @@ line-height: 1.8;
         margin: 1rem auto;
     }
 
+    input[type=submit] {
+        margin: 0;  
+      }
+
+    .footer-container{
+        height: 60vh;
+        grid-template-columns: 1fr;
+        grid-template-areas: "contact"
+                            "follow"
+                            "img";
+                            font-size: 1rem;
+      }
+      
+    .contact-title{
+        margin:1rem auto 0 auto ; 
+        font-size: 1.3rem; 
+      }
+    
+      .contact-text{
+        margin: 0 auto;
+      }
+      .contact-text:nth-of-type(1){
+        margin-right:0;
+      }
+      .contact-text:nth-of-type(3){
+        margin-left: 0;
+        /* font-size: 4rem; */
+      }
+    
+      .follow-title{
+        position: relative;
+        grid-template: follow;
+        bottom: 0;
+        font-weight: 420;
+        font-size: 1.3rem;
+      }
+      .follow-icons{
+        position: relative;
+        bottom: 0;
+        }
+    
+        .footer-img{
+            margin:2rem 0 0 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            grid-template: img;
+            opacity: 0.9;
+          }
+    .footer{
+       bottom: -100px;
+    }
 
     .recipe_info_main{
         height: 200vh;
@@ -192,15 +264,18 @@ line-height: 1.8;
     line-height: 1.8;
       }
     
-    .recipe_info_btn{
-        position: absolute;
-        bottom: -90vh;
-        left: 40vw;
-    }
-    
-
-
-
-    
 }
+
+@media (min-width:1000px) and (max-width: 1500px ){
+    .container ul{
+
+      margin: 0 auto; 
+      padding: 0;
+  
+    }
+    .container li{
+        margin: 1rem auto;
+    }
+}
+
  
