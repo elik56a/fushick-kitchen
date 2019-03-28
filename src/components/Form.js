@@ -3,7 +3,7 @@ import React from 'react'
 const Form = (props) => (
     <div className='form_section'>
         <form onSubmit={props.getRecipe}>
-            <input className='form_input' type="text" name='recipeName' placeholder='Serach Great Recipes Here...' />
+            <input className='form_input' type="text" name='recipeName' placeholder='Serach Great Recipes Here..' />
             <select name="numberOfRecipes" className="selectNumber" id='selectNumber'>
                 <option value="">Number Of Recipes</option>
                 <option value="5">5</option>
