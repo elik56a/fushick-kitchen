@@ -110,6 +110,7 @@
   .follow-icons{
     position: relative;
     bottom: 0;
+    margin: 0 0 1rem 0;
     }
 
     .footer-img{
@@ -199,6 +200,11 @@ line-height: 1.8;
                             "img";
                             font-size: 1rem;
       }
+      follow-icons{
+        position: relative;
+        bottom: 0;
+        margin: 0 0 1rem 0;
+        }
       
     .contact-title{
         margin:1rem auto 0 auto ; 
