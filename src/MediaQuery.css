@@ -1,9 +1,10 @@
 /*media for smartphones */
-@media (max-width:700px){
+@media (max-width:600px){
     .navbar{
         text-align: start;
         height: 40px;
         margin-right: 2rem;
+      
      
     }
     .navbar a{
@@ -11,7 +12,7 @@
         font-size: 1.1rem;
     }
     .navbar a:nth-last-of-type(1){
-        padding-left:0.5rem; 
+        padding-left:0; 
         margin-left: 0;
     }
   
@@ -38,7 +39,6 @@
 
   .container ul{
        padding: 0;
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr; 
     margin: 0 auto;
  
@@ -77,9 +77,8 @@
   }
   .footer-container{
     height: 60vh;
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-        grid-template-areas: "contact"
+    grid-template-areas: "contact"
                         "follow"
                         "img";
                         font-size: 1rem;
@@ -103,7 +102,7 @@
 
   .follow-title{
     position: relative;
-        grid-template: follow;
+    grid-template: follow;
     bottom: 0;
     font-weight: 420;
     font-size: 1.3rem;
@@ -118,7 +117,7 @@
         width: 100px;
         height: 100px;
         border-radius: 50%;
-            grid-template: img;
+        grid-template: img;
         opacity: 0.9;
       }
 .footer{
@@ -126,13 +125,12 @@
 }
 .recipe_info_main{
     height: 200vh;
-        grid-template-areas: "title  "
+    grid-template-areas: "title  "
                           " img"
                           "author "
                           "ingredients"
                           "ingredients"
                           "ingredients";
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
   .recipe_info_img{
@@ -149,11 +147,6 @@ padding:  0;
 line-height: 1.8;
   }
 
-.recipe_info_btn{
-    position: absolute;
-    bottom: -90vh;
-    left: 30vw;
-}
 
   }
 
@@ -165,7 +158,6 @@ line-height: 1.8;
     }
     .container ul{
         grid-gap: 1rem;
-      -ms-grid-columns: 1fr 1rem 1fr;
       grid-template-columns: repeat(2, 1fr); 
       margin: 0 auto; 
       padding: 0;
@@ -178,13 +170,12 @@ line-height: 1.8;
 
     .recipe_info_main{
         height: 200vh;
-            grid-template-areas: "title  "
+        grid-template-areas: "title  "
                               " img"
                               "author "
                               "ingredients"
                               "ingredients"
                               "ingredients";
-        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
       }
       .recipe_info_img{
@@ -206,50 +197,10 @@ line-height: 1.8;
         bottom: -90vh;
         left: 40vw;
     }
-
-
-    .recipe_info_main > .recipe_info_img{
-        -ms-grid-row: 2;
-        -ms-grid-column: 1;
-      }
     
 
 
 
     
-}
-
-
-  
-@media (max-width:700px){
-  .recipe_info_img{
-        -ms-grid-row: 3;
-        -ms-grid-column: 1;
-  }
-.recipe_info_main > .recipe_info_img{
-        -ms-grid-row: 2;
-        -ms-grid-column: 1;
-  }
-  .recipe_info_img{
-        -ms-grid-row: 3;
-        -ms-grid-column: 1;
-  }
-.recipe_info_main > .recipe_info_img{
-        -ms-grid-row: 2;
-        -ms-grid-column: 1;
-  }
-
-}
-
-
-  
-@media (min-width:700px) and (max-width: 1000px ){
-
-
-    .recipe_info_main > .recipe_info_img{
-        -ms-grid-row: 2;
-        -ms-grid-column: 1;
-      }
-
 }
  

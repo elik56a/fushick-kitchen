@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html{
@@ -47,7 +46,6 @@ h1,h2,h3,h4,h5{
   padding: 8px 16px;
   font-size: 1.2rem;
   -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   letter-spacing: 1.3px;
 }
@@ -110,8 +108,7 @@ h1,h2,h3,h4,h5{
   background: wheat;
   color: #333;
   margin: 12rem auto 4rem auto;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
   overflow: hidden;
   
 }
@@ -153,13 +150,11 @@ h1,h2,h3,h4,h5{
   letter-spacing: 1.3px;
   outline: none;
   -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
 .selectNumber:hover{
   letter-spacing: 1.5px;
   -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -174,7 +169,6 @@ h1,h2,h3,h4,h5{
   padding: 0.4rem;
   font-size: 1.1rem;
   -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   outline: none;
 
@@ -192,6 +186,18 @@ h1,h2,h3,h4,h5{
   color:rgb(187, 187, 187);
 }
 
+::-webkit-input-placeholder {
+  color:rgb(187, 187, 187);
+}
+
+::-moz-placeholder {
+  color:rgb(187, 187, 187);
+}
+
+:-ms-input-placeholder {
+  color:rgb(187, 187, 187);
+}
+
 ::placeholder {
   color:rgb(187, 187, 187);
 }
@@ -199,7 +205,6 @@ h1,h2,h3,h4,h5{
   border-left:  solid 2px #2c3e50;
   border-right:  solid 2px #2c3e50;
   -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 
 }
@@ -215,10 +220,8 @@ h1,h2,h3,h4,h5{
   font-weight: 500;
   cursor: pointer;
   -webkit-transition-duration: 2s;
-       -o-transition-duration: 2s;
           transition-duration: 2s;
   -webkit-transition-property: background, letter-spacing;
-  -o-transition-property: background, letter-spacing;
   transition-property: background, letter-spacing; 
   letter-spacing: 2.3px; 
 }
@@ -259,8 +262,7 @@ a {
   height: 400px;
   display: block;
   margin:2rem 0;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411)
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411)
 }
 
 .recipe-title{
@@ -293,13 +295,11 @@ a {
   left: 90px;
   letter-spacing: 1px;
   -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
 
 }
 .recipe-buttons:hover{
   -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
   letter-spacing: 1.3px;
   background: #fff;
@@ -380,7 +380,6 @@ input[type=submit] {
   cursor: pointer;
   margin: 0.3rem  0 0 71vh;
   -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 1rem;
 }
@@ -457,7 +456,6 @@ bottom: -9vh;
 .follow-icons .icon {
   margin: 0 0.5rem;
   -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   padding: 0;
   font-size: 2rem;
