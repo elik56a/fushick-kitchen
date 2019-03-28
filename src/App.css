@@ -1,5 +1,6 @@
- * {
-  box-sizing: border-box;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html{
@@ -45,6 +46,8 @@ h1,h2,h3,h4,h5{
   text-align: center;
   padding: 8px 16px;
   font-size: 1.2rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   letter-spacing: 1.3px;
 }
@@ -107,7 +110,8 @@ h1,h2,h3,h4,h5{
   background: wheat;
   color: #333;
   margin: 12rem auto 4rem auto;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
   overflow: hidden;
   
 }
@@ -148,10 +152,14 @@ h1,h2,h3,h4,h5{
   cursor: pointer;
   letter-spacing: 1.3px;
   outline: none;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
 .selectNumber:hover{
   letter-spacing: 1.5px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -165,9 +173,23 @@ h1,h2,h3,h4,h5{
   width: 28%;
   padding: 0.4rem;
   font-size: 1.1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   outline: none;
 
+}
+
+::-webkit-input-placeholder {
+  color:rgb(187, 187, 187);
+}
+
+:-ms-input-placeholder {
+  color:rgb(187, 187, 187);
+}
+
+::-ms-input-placeholder {
+  color:rgb(187, 187, 187);
 }
 
 ::placeholder {
@@ -176,6 +198,8 @@ h1,h2,h3,h4,h5{
 .form_input:focus{
   border-left:  solid 2px #2c3e50;
   border-right:  solid 2px #2c3e50;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 
 }
@@ -190,7 +214,11 @@ h1,h2,h3,h4,h5{
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
-  transition-duration: 2s;
+  -webkit-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-property: background, letter-spacing;
+  -o-transition-property: background, letter-spacing;
   transition-property: background, letter-spacing; 
   letter-spacing: 2.3px; 
 }
@@ -211,7 +239,9 @@ a {
   padding: 2rem 1rem;
   margin: 0 6rem;
   grid-gap: 1rem;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr;
   grid-template-columns: repeat(3,1fr);
 }
 .res-img{
@@ -229,7 +259,8 @@ a {
   height: 400px;
   display: block;
   margin:2rem 0;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411)
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411)
 }
 
 .recipe-title{
@@ -261,10 +292,14 @@ a {
   bottom: 0.6rem;
   left: 90px;
   letter-spacing: 1px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
 
 }
 .recipe-buttons:hover{
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
   letter-spacing: 1.3px;
   background: #fff;
@@ -344,6 +379,8 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   margin: 0.3rem  0 0 71vh;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 1rem;
 }
@@ -378,14 +415,16 @@ z-index:-5;
   top: 55vh;  
   background: #2c3e50;
   color:rgb(172, 172, 172);
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "contact follow img";
+      grid-template-areas: "contact follow img";
+  -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3,1fr);
 
 }
 
 .contact-elements{
-  grid-template: contact;
+      grid-template: contact;
 }
 .contact-title{
   margin:4rem 11rem 0.3rem 0 ;
@@ -405,7 +444,7 @@ z-index:-5;
 
 .follow-title{
   position: relative;
-  grid-template: follow;
+      grid-template: follow;
   bottom: -6vh;
   font-size: 1.6rem;
   font-weight: 420; 
@@ -417,6 +456,8 @@ bottom: -9vh;
 }
 .follow-icons .icon {
   margin: 0 0.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   padding: 0;
   font-size: 2rem;
@@ -430,7 +471,7 @@ bottom: -9vh;
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        grid-template: img;
+            grid-template: img;
         opacity: 0.9;
       }
 .footer{
@@ -444,4 +485,3 @@ bottom: -9vh;
   font-size: 1rem;
 
 }
-
