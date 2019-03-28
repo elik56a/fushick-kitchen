@@ -97,12 +97,7 @@ h1,h2,h3,h4,h5{
   right: 27vw;
   top:293px;
 }
-.showcase-text{
-  font-size: 1.5rem;
-  position: absolute;
-  left: 10px;
-  bottom: 40px;
-}
+
 
 
 /*about section */
@@ -138,12 +133,7 @@ h1,h2,h3,h4,h5{
   bottom: 80px;
 
 }
-.photoz{
-  border-radius: 50%;
-  widows: 105px;
-  height: 105px;
-  position: absolute;
-}
+
 /* form section */
 .selectNumber{
   background: transparent;
@@ -425,14 +415,6 @@ position: relative;
 bottom: -9vh;
 
 }
-.footer-img{
-  margin:3rem 0 0 0;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  grid-template: img;
-  opacity: 0.9;
-}
 .follow-icons .icon {
   margin: 0 0.5rem;
   transition: all 0.3s ease-in-out;
@@ -440,9 +422,17 @@ bottom: -9vh;
   font-size: 2rem;
   color:rgb(172, 172, 172);
 }
- .follow-icons .icon:hover{
+.follow-icons .icon:hover{
   color: #fff;
-     }
+}
+      .footer-img{
+        margin:3rem 0 0 0;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        grid-template: img;
+        opacity: 0.9;
+      }
 .footer{
   position: absolute;
   width: 100%;
@@ -455,94 +445,3 @@ bottom: -9vh;
 
 }
 
-
-/* Active Recipe */
-.recipe_info_container{
-  max-width: 100%;
-  margin:0 auto;
-  overflow : hidden;
-  padding: 0.3rem;
-  letter-spacing: 2px;
-
-}
-.recipe_info_main{
-  width: 90%;
-  height: 98.5vh;
-  background: wheat;
-  margin: 0 auto;
-  color: #333;
-  border-radius: 5px;
-  display: grid;
-  grid-template-areas: "title ingredients "
-                        " img ingredients"
-                        "author ingredients";
-  grid-template-columns: repeat(2,1fr)
- 
-}
-
-.recipe_info_title{
-  padding: 3rem 0 5px  0.5rem;
-  grid-area: title;
-  text-transform: uppercase;
-  margin: 0;
-}
-.recipe_info_img{
-  grid-area: img;
-  border-radius: 5px;
-  width: 30vw;
-  height: 40vh;
-  margin: 0 auto;
-}
-
-.recipe_info_publisher {
-  grid-area: author;
-  margin:0;
-}
-.recipe_info_publisher p{
-  margin: 0;
-  padding: 10px;
-  font-size: 1.3rem;
-}
-.recipe_info_origin{
-  transition: all 0.4s;
-}
-.recipe_info_origin:hover{
-  color: rgb(150, 41, 27);
-}
-.recipe_info_site{
-  transition: all 0.4s;
-}
-.recipe_info_site:hover{
-  color: rgb(150, 41, 27);
-}
-.recipe_info_ingredients{
-  font-family: "Courgette", cursive;
-  font-size: 15px;
-  color: #333;
-  grid-area: ingredients;
-  width: 100%;
-  height: 100%;
-  list-style: none;
-  text-overflow: clip;
-  box-sizing: border-box;
-}
-.recipe_info_list{
-  font-size: 0.95rem;
-}
-.recipe_info_btn{
-      border: solid 1px rgb(150, 41, 27);
-      background: #fff;
-      padding: 0.6rem 0.9rem;
-      margin:1rem;
-      border-radius: 3px;
-      font-size: 1rem;
-      text-transform: uppercase;
-      font-weight: 500;
-      text-decoration: none;
-      transition: all 0.4s;
-    }
-
-    .recipe_info_btn:hover{
-      background: wheat;
-      transition: all 0.4s;
-    }

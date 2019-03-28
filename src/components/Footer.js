@@ -4,7 +4,7 @@ const Footer = () => (
 
     <div className="footer-container" id='footer-container'>
         <div className="contact-elements">
-            <h3 className='contact-title'>Contact Us</h3>
+            <h2 className='contact-title'>Contact Us</h2>
             <p className='contact-text'><i className="fas fa-phone fa-x1"></i> Phone: 054-8445-453 </p>
             <p className='contact-text'><i className="far fa-envelope-open"></i> Email: <em>fushick.kitchn@gmail.com </em></p>
             <p className='contact-text'><i className="fas fa-map-marker-alt"></i> Address: Alenbi 57 St, Tel Aviv, Israel </p>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import './RecipeInfo.css'
+import './MediaQuery.css'
 import Form from './components/Form'
 import Recipes from './components/Recepies'
 import ShowCase from './components/ShowCase';

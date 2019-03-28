@@ -11,9 +11,7 @@ const BuyFood = () => (
 
         <div className="form-container">
             <form name="contact" netlify-honeypot="bot-field" data-netlify="true">
-                <p class="hidden">
-                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                </p>
+
                 <div className="row">
                     <input className="user-name" type="text" id="fname" name="userName" placeholder="Your Full Name" />
                 </div>
